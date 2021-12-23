@@ -1,13 +1,11 @@
-# jenkins-init
+# Jenkins Initialize
 
-Quickly spin up local jenkins instance
+Spin up local jenkins server.
 
-Pre-requisite:
-Docker
+## Run
+- `docker-compose up -d`
+- Launch `http://localhost:8080`
+- Grab password using `docker logs -f jenkins`
 
-To spin up local jenkins instance:
-1. Run `docker-compose up -d`
-2. Launch http://localhost:8080
-
-Additional info:
-Grab password from `docker logs -f jenkins`
+## Pre-requisite
+[Docker](https://www.docker.com/)
